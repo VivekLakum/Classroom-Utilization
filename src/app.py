@@ -5,8 +5,7 @@ import altair as alt
 # ----------------------------
 # Load Data
 # ----------------------------
-df = pd.read_csv("C:\Users\Vivek\Downloads\my_project\data\all_rooms_timetable.csv")
-
+df = pd.read_csv("data/all_rooms_timetable.csv")
 # Make sure types are right
 df["room_name"] = df["room_name"].astype(str)
 
@@ -167,3 +166,4 @@ elif st.session_state.page == "visual":
         st.session_state.page = "operations"
 
         st.rerun() # Use rerun to refresh the page state immediately
+
